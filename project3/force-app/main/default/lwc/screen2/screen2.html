@@ -1,0 +1,69 @@
+<template>
+    <lightning-card variant="base">
+        <div class="container">
+            <h2 class="Header"> <b>Record Page</b> </h2>
+            <div class="search-container">
+                <lightning-input class="search-bar" type="search" name="search" placeholder="Search"></lightning-input>
+                <lightning-icon class="filter-icon" icon-name="utility:filter" size="small" onclick={handleFilter}></lightning-icon>
+            </div>
+
+            
+            <div class="actions">
+                <lightning-button variant="base" label="Select All" onclick={handleClick}></lightning-button>
+                <lightning-button label="New Suspect" variant="Neutral" onclick={handleSuspects}></lightning-button>
+            </div>
+            <br />
+            <!-- //Codnitional Rendering for Create Suspect-->
+            <div class="form-container">
+                <template if:true={showSuspect}>
+                    <c-screen1></c-screen1>
+                </template>
+            </div>
+ 
+
+            <!-- //Codnitional Rendering for Filter-->
+
+            <div class="form-container">
+                <template if:true={showFilter}>
+                <c-screen3></c-screen3>    
+                </template>
+            </div>         
+ 
+            
+
+            <!-- Contact List - Start -->
+         <template if:false={showSuspect}>
+
+            <template for:each={contacts} for:item="contact">
+                <div key={contact.Id} class="header-row">
+                    <div class="check-box-Info-Container">
+                        <div class="checkbox-container">
+                            <lightning-input type="checkbox" name={contact.Id} onchange={handleSelectAll}></lightning-input>
+                        </div>
+                        <div class="info-container">
+                            <p class="info">Contact ID: <span>{contact.Id}</span></p>
+                            <p class="info">First Name: <span>{contact.FirstName}</span></p>
+                            <p class="info"> Last Name: <span>{contact.LastName}</span></p>
+                            <p class="info"> Email: <span>{contact.Email}</span></p>
+                            <p class="info"> Department: <span>{contact.Department}</span></p>
+                            <p class="info"> Level: <span>{contact.Level__c}</span></p>
+
+
+                            <p class="info">Created On: <span>{contact.CreatedDate}</span></p>
+                            <p style="color: green;" class="info">Follow up tomorrow at: <span>{contact.Follow_Up_Time__c}</span></p>
+                                         <br>
+                        </div> 
+                    </div>
+                    <div class="icon-container">
+                        <span class="fire-icon">🔥</span>
+                        <i class='fa fa-fire' style='color: red'></i>
+                        <span class="sms-icon">SMS</span>
+                    </div>
+                </div>
+            </template>
+        </template>
+
+             <!-- Contact List - End -->
+        </div>
+    </lightning-card>
+</template>

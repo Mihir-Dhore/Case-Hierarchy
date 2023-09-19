@@ -1,0 +1,98 @@
+.container {
+    padding: 5px;
+ }
+
+ .Header{
+    text-align: center;
+    color: black;
+ }
+ 
+.search-container {
+ 
+    display: flex;
+    align-items: center;
+    /* margin-top: 10px; */
+    /* justify-content: space-between; */
+
+}
+
+.search-bar {
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 3px;
+}
+
+.filter-icon {
+    color: gray;
+    margin-top: 23px;
+    padding-right: 10px;
+
+ }
+
+.actions {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.slds-checkbox {
+    margin-right: 10px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.info span {
+    font-weight: normal;
+}
+.fire-icon {
+    /* display: flex;
+    justify-content: space-between; */
+    /* margin-left: 5px; */
+
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    
+ 
+
+    
+}
+.check-box-Info-Container{
+    display: flex;
+}
+.sms-icon {
+    display: inline-block;
+    background-color: rgba(238, 246, 15, 0.963);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    
+}
+.icon-container{
+    display:flex;
+}

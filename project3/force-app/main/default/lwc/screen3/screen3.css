@@ -1,0 +1,46 @@
+.main {
+    padding: 20px;
+}
+.searchbar{
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+.checkbox{
+    display: flex;
+    
+}
+.content {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer lightning-button {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+}
+
+.footer .reset {
+    --sds-c-button-color-brand-text: black;
+    --sds-c-button-color-brand-background: white; 
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.footer .filter {
+    --sds-c-button-color-brand-background: #0070d2;
+}

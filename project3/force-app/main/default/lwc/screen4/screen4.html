@@ -1,0 +1,133 @@
+<template>
+    <lightning-card title="Screen-4" variant="base">
+        <div class="container">
+            <!-- Developer 1 -->
+            <div class="search-container">
+                <div class="selected-options">
+                    <p style="color: #413a3a;"><b>Developr</b></p>
+
+                    <template for:each={selectedOptions1} for:item="option">
+                        <div key={option.id} class="selected-option">
+                            {option.label}
+                            <button class="remove-button" onclick={removeSelectedOption1} data-option-id={option.id}>
+                                &#10005;
+                            </button>
+                        </div>
+                    </template>
+                </div>
+                <input type="text" class="search-input" placeholder="Search" oninput={handleSearch1} />
+                <div class="options-container">
+                    <template for:each={filteredOptions1} for:item="option">
+                        <div key={option.id} class="option">
+                            <label>
+                                <input type="checkbox" onchange={handleCheckboxChange1} data-option-id={option.id} />
+                                {option.label}
+                            </label>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Developer 2 -->
+            <div class="search-container">
+                <div class="selected-options">
+                    <p style="color: #413a3a;"><b>Project</b></p>
+
+                    <template for:each={selectedOptions2} for:item="option">
+                        <div key={option.id} class="selected-option">
+                            {option.label}
+                            <button class="remove-button" onclick={removeSelectedOption2} data-option-id={option.id}>
+                                &#10005;
+                            </button>
+                        </div>
+                    </template>
+                </div>
+                <input type="text" class="search-input" placeholder="Search" oninput={handleSearch2} />
+                <div class="options-container">
+                    <template for:each={filteredOptions2} for:item="option">
+                        <div key={option.id} class="option">
+                            <label>
+                                <input type="checkbox" onchange={handleCheckboxChange2} data-option-id={option.id} />
+                                {option.label}
+                            </label>
+                        </div>
+                    </template>
+                </div>
+            </div>
+
+            <!-- Developer 3 -->
+            <div class="search-container">
+                <div class="selected-options">
+                    <p style="color: #413a3a;"><b>State</b></p>
+
+                    <template for:each={selectedOptions3} for:item="option">
+                        <div key={option.id} class="selected-option">
+                            {option.label}
+                            <button class="remove-button" onclick={removeSelectedOption3} data-option-id={option.id}>
+                                &#10005;
+                            </button>
+                        </div>
+                    </template>
+                </div>
+                <input type="text" class="search-input" placeholder="Search" oninput={handleSearch3} />
+                <div class="options-container">
+                    <template for:each={filteredOptions3} for:item="option">
+                        <div key={option.id} class="option">
+                            <label>
+                                <input type="checkbox" onchange={handleCheckboxChange3} data-option-id={option.id} />
+                                {option.label}
+                            </label>
+                        </div>
+                    </template>
+                </div>
+            </div>
+            <br>
+
+            <!-- Developer 4 -->
+            <div class="search-container">
+                <div class="selected-options">
+                    <p style="color: #413a3a;"><b>Location</b></p>
+
+                    <template for:each={selectedOptions4} for:item="option">
+                        <div key={option.id} class="selected-option">
+                            {option.label}
+                            <button class="remove-button" onclick={removeSelectedOption4} data-option-id={option.id}>
+                                &#10005;
+                            </button>
+                        </div>
+                    </template>
+                </div>
+                <input type="text" class="search-input" placeholder="Search" oninput={handleSearch4} />
+                <div class="options-container">
+                    <template for:each={filteredOptions4} for:item="option">
+                        <div key={option.id} class="option">
+                            <label>
+                                <input type="checkbox" onchange={handleCheckboxChange4} data-option-id={option.id} />
+                                {option.label}
+                            </label>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <div class="slds-form-element__control">
+            <div class="slds-select_container">
+                <select class="slds-select" id="device-selector-rg0rgx9p4">
+                    <option value="no-device">No device</option>
+                    <option value="iphone-11-pro-max">iPhone 11 Pro Max</option>
+                    <option value="iphone-11-pro">iPhone 11 Pro</option><option value="iphone-11">iPhone 11</option>
+                    <option value="iphone-xr">iPhone XR</option>
+                    <option value="iphone-x">iPhone X</option>
+                    <option value="iphone-8-plus">iPhone 8 Plus</option>
+                    <option value="iphone-8">iPhone 8</option>
+                    <option value="ipad-pro">iPad Pro</option>
+                    <option value="ipad">iPad 3rd &amp; 4th Generation</option>
+                    <option value="pixel-3xl">Google Pixel 3 XL</option><option value="pixel-3">Google Pixel 3</option>
+                  </select>
+                </div>
+            </div>
+
+        <br><br>
+   </lightning-card>
+</template>

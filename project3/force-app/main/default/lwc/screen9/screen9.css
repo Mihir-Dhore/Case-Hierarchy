@@ -1,0 +1,131 @@
+.container{
+    padding: 15px;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.car{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fef6f6;
+}
+.car-info{
+    padding-left: 20px;
+    
+}
+.car-config{
+    display: flex;
+
+}
+.car-config-info{
+    padding-left: 15px;
+    font-size: 20px;
+}
+.flint{
+    display: flex;
+    justify-content: space-around;
+}
+/* hoverButton.css */
+.hover-button {
+    padding: 10px 50px;
+    border: solid 1px #ccc; 
+    border-radius: 3px; 
+    cursor: pointer; 
+}
+
+.hover-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+ .car-color-changer {
+    text-align: center;
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.color-option {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.color-option:hover {
+    background-color: red;
+}
+.red-button{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.blue-button{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.limegreen-button{
+    width: 40px;
+    height: 40px;
+    background-color: limegreen;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pink-button{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(222, 19, 178);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.turquoise-button{
+    width: 40px;
+    height: 40px;
+    background-color:turquoise;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+ 
+.footerbutton{
+    display: flex;
+    justify-content: space-around;
+
+}
+.hover-button-footer{
+    padding: 10px 40px;
+    border: solid 1px #ccc; 
+    border-radius: 3px; 
+    cursor: pointer; 
+
+}
+.footer-icon{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+    padding-left: 14px;
+}
+.footer-name{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+ 

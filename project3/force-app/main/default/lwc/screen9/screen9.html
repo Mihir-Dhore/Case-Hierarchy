@@ -1,0 +1,129 @@
+<template>
+    <lightning-card title="Screen-9" variant="brand">
+    <div class="container">
+        <div class="header">
+            <div>
+                <lightning-icon icon-name='action:fallback' alternative-text='fallback' size='small' title='fallback'></lightning-icon>
+                <p style="color: #afa0a0;">Order</p>
+            </div>
+            <div>
+                <lightning-icon icon-name='action:share_post' alternative-text='share_post' size='small' title='share_post'></lightning-icon>
+                <p style="color: #afa0a0;">Post</p>
+            </div>
+            <div>
+                <lightning-icon icon-name='action:share_file' alternative-text='share_file' size='small' title='share_file'></lightning-icon>
+                <p style="color: #afa0a0;">File</p>
+            </div>
+            <div>
+                <lightning-icon icon-name='action:more' alternative-text='more' size='small' title='more'></lightning-icon>
+                <p style="color: #afa0a0;">More</p>
+
+            </div>
+        </div>
+        <br>
+        <div class="car">
+            <div>
+                <lightning-icon icon-name='custom:custom31' alternative-text='custom31' size='large' title='custom31'></lightning-icon>
+            </div>
+            <div class="car-info">
+                <h1 style="color: #afa0a0;font-size: large;">2019091-94733</h1>
+                <h3 style="color: rgb(75, 165, 207);">Mike West - <span style="color: #afa0a0;">Flash - 2019</span> </h3>
+            </div>
+        </div>
+        <br>
+        <div class="car-config">
+            <div>
+                <lightning-icon icon-name='standard:date_time' alternative-text='date_time' size='medium' title='date_time'></lightning-icon>            </div>
+            <div>
+                <h1 class="car-config-info"> <b>Car Configurator</b></h1>
+            </div>
+        </div>
+        <br>
+        <div class="flint">
+            <div>
+                <button class="hover-button"><span style="color: black">Flint</span> </button>
+            </div>
+            <div>
+                <button class="hover-button"><span style="color: black">Flare</span> </button>
+            </div>
+            <div>
+                <button class="hover-button"><span style="color: black">Flash</span> </button>
+            </div>
+        </div>
+        <br>
+        <img src={carimageee} alt="Car" class="image"></img>
+        <br>  
+        <div style="display: flex; justify-content:space-between">
+            <div>
+                <button class="red-button" onclick={handleredcolor}></button>
+            </div>
+            <div>
+                <button class="blue-button" onclick={handlebluecolor}></button>
+            </div>
+            <div>
+                <button class="limegreen-button" onclick={handlelimegreencolor}></button>
+            </div>        
+            <div>
+                <button class="pink-button" onclick={handlepinkcolor}></button>
+            </div>        
+            <div>
+                <button class="turquoise-button" onclick={handleturquoisecolor}></button>
+            </div>
+        </div>
+        <br> 
+        <div class="footerbutton">
+            <div>
+                <button class="hover-button-footer"><span style="color: black">75kWh</span> </button>
+            </div>
+            <div>
+                <button class="hover-button-footer"><span style="color: black">100kWh</span> </button>
+            </div>
+            <div>
+                <button class="hover-button-footer"><span style="color: black">100P kWh</span> </button>
+            </div>
+        </div>
+        <hr style="border-top: 12px solid #f0e9e9; margin-top: 5px;margin-bottom:3px; width:100%">
+
+        <h1 style="font-size: 20px;">Price Quote</h1>
+        <h2>$45,000.00</h2>
+        <br>
+        <div class="footer-icon">
+            <div>
+                <lightning-icon icon-name='utility:home' alternative-text='home' size='small' title='home'></lightning-icon>
+            </div>
+            <div>
+                <lightning-icon icon-name='utility:favorite' alternative-text='favorite' size='small' title='favorite'></lightning-icon>
+            </div>
+            <div>
+                <lightning-icon icon-name='utility:search' alternative-text='search' size='small' title='search'></lightning-icon>
+            </div>
+            <div>
+                <lightning-icon icon-name='utility:notification' alternative-text='notification' size='small' title='notification'></lightning-icon>
+            </div>
+            <div>
+                <lightning-icon icon-name='utility:threedots' alternative-text='threedots' variant='success' size='small' title='threedots'></lightning-icon>
+            </div>
+        </div>
+        <div class="footer-name">
+            <div>
+                <p style="color: #afa0a0;">Accounts</p>
+            </div>
+            <div>
+                <p style="color: #afa0a0;">Favourites</p>
+            </div>
+            <div>
+                <p style="color: #afa0a0;">Search</p>
+            </div>
+            <div>
+                <p style="color: #afa0a0;">Notifications</p>
+            </div>
+            <div>
+                <p style="color: #afa0a0;">Menu</p>
+            </div>
+
+
+        </div>
+
+    </div>
+</lightning-card>
+</template>

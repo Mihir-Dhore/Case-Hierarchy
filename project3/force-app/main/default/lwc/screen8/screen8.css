@@ -1,0 +1,30 @@
+.container{
+    padding: 15px;
+}
+.header{
+display: flex;
+justify-content: space-around;
+}
+.opportunity{
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #dacdcde7;
+
+}
+.inneropp{
+    padding-left: 10px;
+}
+.AccName{
+    display: flex;
+}
+.mark{
+    width: 100%;
+    padding: 7px;  
+    background-color: #007acc;  
+    color: #fffcfb;  
+    border: none;  
+    cursor: pointer;  
+    font-size: 16px;  
+    border-radius: 3px;
+}

@@ -1,0 +1,66 @@
+<!-- YourComponent.html -->
+<template>
+    <lightning-card style="padding: 15px;" title="Assessment" variant="base">
+        <div class="header">
+            <div class="header-item">
+                <h2><b>Case Number</b></h2>
+            </div>
+            <div class="header-item">
+                <h2><b>Subject</b></h2>
+            </div>
+            <div class="header-item">
+                <h2><b>Case Origin</b></h2>
+            </div>
+        </div>
+
+        <template for:each={cases} for:item="myCase">
+            <div class="header-row" key={myCase.Id}>
+                <div class="header">
+                    <div class="header-item">
+                        <button onclick={handleButtonClick} data-record-id={myCase.Id} class="button">+</button>
+                        <button onclick={handleCancelButtonClick} data-record-id={myCase.Id} class="button">-</button>
+                        <span onclick={navigateToCaseRecord} data-record-id={myCase.Id}>{myCase.CaseNumber}</span>
+                    </div>
+                    <div class="header-item">
+                        {myCase.Subject}
+                    </div>
+                    <div class="header-item">
+                        {myCase.Origin}
+                    </div>
+                </div>
+                <div class="child">
+                    <template if:true={myCase.showChildDataTemplate}>
+                        <div class="header" key={childCase.Id}>
+                            <div class="header-item">
+                                <h2><b>Child Case Number</b></h2>
+                            </div>
+                            <div class="header-item">
+                                <h2><b>Child Subject</b></h2>
+                            </div>
+                            <div class="header-item">
+                                <h2><b>Child Case Origin</b></h2>
+                            </div>
+                        </div>
+
+                        <!-- Display child records here -->
+                        <template for:each={myCase.childCases} for:item="childCase">
+                            <div class="header" key={childCase.Id}>
+                                <div class="header-item">
+                                    <button onclick={handleChildButtonClick} data-record-id={childCase.Id} class="button">+</button>
+                                    <button onclick={handleChildCancelButtonClick} data-record-id={childCase.Id} class="button">-</button>
+                                    <span onclick={navigateToCaseRecord} data-record-id={childCase.Id}>{childCase.CaseNumber}</span>
+                                </div>
+                                <div class="header-item">
+                                    {childCase.Subject}
+                                </div>
+                                <div class="header-item">
+                                    {childCase.Origin}
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+            </div>
+        </template>
+    </lightning-card>
+</template>

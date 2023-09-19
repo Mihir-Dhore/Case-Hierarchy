@@ -1,0 +1,54 @@
+<template>
+    <lightning-card class="main" variant="base">
+    <div class="container">
+        <div class="content">
+            <div class=" searchbar">
+                <lightning-input placeholder="Search..." name="enter-search" type="search"></lightning-input>
+            </div>
+        
+            <lightning-tabset variant="vertical">
+                <lightning-tab label="Project">
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> One Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> One Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> One Content !</div> <br>
+
+                 </lightning-tab>
+                <lightning-tab label="Campaign">
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Two Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Two Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Two Content !</div> <br>
+                 </lightning-tab>
+                <lightning-tab label="Location">
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Three Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Three Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Three Content !</div> <br>
+         
+                </lightning-tab>
+                <lightning-tab label="Lead Type">
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Four Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Four Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Four Content !</div> <br>
+         
+                </lightning-tab>
+                <lightning-tab label="Source">
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Five Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Five Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Five Content !</div> <br>
+                </lightning-tab>
+                <lightning-tab label="Sales Association">
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Six Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Six Content !</div> <br>
+                    <div class="checkbox"><lightning-input type="checkbox" ></lightning-input> Six Content !</div> <br>
+         
+                </lightning-tab>
+            </lightning-tabset>
+        </div>
+
+        <div class="footer">
+            <lightning-button class="reset" variant="brand-outline" label="Reset" onclick={handleClick}></lightning-button>
+            <lightning-button class="filter" variant="brand" label="Filter" title="Primary action" onclick={handleClick}></lightning-button>
+        </div>
+</div>
+</lightning-card>
+
+</template>

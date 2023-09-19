@@ -1,0 +1,46 @@
+<template>
+
+    <lightning-card  variant="base">
+
+        <!-- Conditional Rendering for Cancel  -->
+               <div class="form-container">
+                <template if:true={showForm1}>
+                    <c-screen2></c-screen2>
+               </template>
+            </div>
+
+        <!-- Conditional Rendering for Suspect  -->
+            <div class="form-container">
+                <template if:true={showForm2}>
+                    <c-screen2></c-screen2>
+                </template >
+            </div>
+
+ <div class="container">
+
+     <template if:false={showForm2}>
+
+        <h2 style="color: skyblue; font-size:medium">Basic Information</h2>
+        <lightning-record-edit-form
+            object-api-name="Contact"
+            onsuccess={handleSuccess}
+            density=""
+        >
+            <lightning-input-field field-name={fnameField}></lightning-input-field>
+            <lightning-input-field field-name={lnameField}></lightning-input-field>
+            <lightning-input-field field-name={emailField}></lightning-input-field>
+            <lightning-input-field field-name={deptField}></lightning-input-field>
+            <lightning-input-field field-name={lsourceField}></lightning-input-field>
+            <lightning-input-field field-name={levelField}></lightning-input-field>
+
+            <div style="display: flex; justify-content:space-between">
+                <lightning-button variant="brand" type="submit" label="Cancel" onclick={handleCancel} ></lightning-button>
+    
+                <lightning-button variant="brand" type="submit" label="Create Suspect" onclick={handleCreateSuspect}></lightning-button>    
+            </div>
+        </lightning-record-edit-form>
+     </template>
+ </div>
+
+    </lightning-card>
+</template>
